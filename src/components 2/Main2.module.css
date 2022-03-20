@@ -1,0 +1,24 @@
+.container{
+    width: 1000px;
+    min-height: 400px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 10px 10px 13px #0002,-10px -10px 13px #fff7;
+    align-items: center;
+    margin: 100px auto;
+    border-radius: 20px;
+}
+.container h1{
+    text-shadow: -3px -3px 3px #fff7,5px 5px 5px #0002;
+    text-transform: uppercase;
+    color: #e5e5e5;
+    font-size: 3rem;
+}
+@media (max-width: 999px) {
+    .container{
+        width: 100%;
+    }
+    .container h1{
+        font-size: 2.5rem;
+    }
+}

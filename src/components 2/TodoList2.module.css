@@ -1,0 +1,8 @@
+.container ul{
+    margin-right: 340px;
+}
+@media (max-width: 768px){
+    .container ul{
+        margin: 0 auto;
+    }
+}

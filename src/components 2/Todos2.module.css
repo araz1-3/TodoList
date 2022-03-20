@@ -1,0 +1,74 @@
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 400px;
+    background-color: transparent;
+    min-height: 45px;
+    border-radius: 5px;
+    text-transform: capitalize;
+    box-shadow: -5px -5px 5px #fff7, 5px 5px 5px #0002;
+    margin-bottom: 20px;
+    animation: opacity .3s linear;
+}
+@keyframes opacity {
+    from{
+        opacity: 0;
+        transform: scale(0.7);
+    }
+}
+
+.list{
+    list-style: none;
+    padding-left: 10px;
+    max-width: 200px;
+    user-select: none;
+}
+.btn{
+    padding-right: 10px;
+    display: flex;
+    grid-gap: 20px;
+    align-items: center;
+}
+.btn img{
+    width: 15px;
+}
+.checkBtn,.deleteBtn,.editBtn{
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+    box-shadow: -5px -5px 5px #fff7, 5px 5px 5px #0002;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    user-select: none;
+}
+.checkBtn:active,.deleteBtn:active,.editBtn:active{
+    box-shadow: inset -5px -5px 5px #fff7,inset 5px 5px 5px #0002;
+}
+.complete{
+    text-decoration: line-through;
+    list-style: none;
+    padding-left: 10px;
+    opacity: 0.5;
+    max-width: 200px;
+    user-select: none;
+}
+@media (max-width:768px) {
+    .container{
+        width: 500px;
+        margin: 20px auto;
+    }
+}
+@media (max-width:600px) {
+    .container{
+        width: 400px;
+        margin: 20px auto;
+    }
+}
+@media (max-width:400px) {
+    .container{
+        width: 250px;
+        margin: 20px auto;
+    }
+}
