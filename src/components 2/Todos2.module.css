@@ -62,7 +62,7 @@
 }
 @media (max-width:600px) {
     .container{
-        width: 380px;
+        width: 350px;
         margin: 20px auto;
     }
 }
